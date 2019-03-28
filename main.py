@@ -1,4 +1,7 @@
 from inPainting-nps import *
+import time
+import logging
+from logging.config import dictConfig
 
 def main():
     filenames = ["test_im1.bmp","test_im2.bmp"]
@@ -10,9 +13,6 @@ def main():
             end = time.time()
             #Calculate and log the running times
             logging.info("\t"+file+"-"+str(windowSize)+"\t:-  "+str(end-start)+" secs")
-
-
-
 
 if __name__ == '__main__':
     main()
